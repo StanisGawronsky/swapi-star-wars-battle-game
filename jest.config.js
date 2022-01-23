@@ -8,6 +8,7 @@ module.exports = {
     "~/components/atoms": "<rootDir>/src/components/atoms/index.ts",
     "~/components/molecules": "<rootDir>/src/components/molecules/index.ts",
     "~/components/organisms": "<rootDir>/src/components/organisms/index.ts",
+    "~/helpers/": "<rootDir>/src/helpers/index.ts",
   },
   setupFilesAfterEnv: ["@testing-library/jest-dom/extend-expect"],
   transform: {

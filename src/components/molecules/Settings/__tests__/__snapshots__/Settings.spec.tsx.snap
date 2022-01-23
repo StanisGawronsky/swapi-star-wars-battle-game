@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Settings /> renders correctly 1`] = `
+<div>
+  <div>
+    <div>
+      <label>
+        Chose your player type
+      </label>
+      <select />
+    </div>
+    <div>
+      <label>
+        Chose your attribute
+      </label>
+      <select />
+    </div>
+  </div>
+</div>
+`;

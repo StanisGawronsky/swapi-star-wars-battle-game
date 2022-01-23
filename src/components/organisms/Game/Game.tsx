@@ -1,14 +1,27 @@
 import React from "react";
+
+import { SettingsModel } from "~/components/molecules/SettingsModel";
+
 import { ChampionType, StarshipType } from "~/types/index";
+
 interface IProps {
-  props: {
+  props?: {
     champions: ChampionType[];
     starships: StarshipType[];
   };
 }
 const Game: React.FC<IProps> = (props: IProps) => {
-  console.log(props);
-  return <div></div>;
+  return (
+    <div>
+      <SettingsModel />
+      {/* <Settings
+        playerTypes={playerTypes}
+        availableAttributes={availableAttributes}
+        setCurrentAttribute={setCurrentAttribute}
+        setCurrentPlayerType={setCurrentPlayerType}
+      /> */}
+    </div>
+  );
 };
 
 export default Game;

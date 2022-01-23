@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Game /> renders correctly 1`] = `
+<div>
+  <div>
+    <div>
+      <div>
+        <label>
+          Chose your player type
+        </label>
+        <select>
+          <option
+            value="champions"
+          >
+            champions
+          </option>
+          <option
+            value="starships"
+          >
+            starships
+          </option>
+        </select>
+      </div>
+      <div>
+        <label>
+          Chose your attribute
+        </label>
+        <select>
+          <option
+            value="height"
+          >
+            height
+          </option>
+          <option
+            value="mass"
+          >
+            mass
+          </option>
+          <option
+            value="birth_year"
+          >
+            birth year
+          </option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,10 +1,9 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import Settings from "../Settings/Settings";
-
-describe("<Settings />", () => {
+import SettingsModel from "../SettingsModel";
+describe("<SettingsModel />", () => {
   it("renders correctly", () => {
-    const { container } = render(<Settings />);
+    const { container } = render(<SettingsModel />);
     expect(container).toMatchSnapshot();
   });
 });

@@ -19,7 +19,8 @@
       "~/api/*": ["api/*"],
       "~/components/*": ["components/*"],
       "~/helpers/*": ["helpers/*"],
-      "~/types/*": ["types/*"]
+      "~/types/*": ["types/*"],
+      "~/player/*": ["player/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

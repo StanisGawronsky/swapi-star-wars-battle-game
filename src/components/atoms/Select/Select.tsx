@@ -1,4 +1,5 @@
 import React from "react";
+import { parseAttributesForView } from "~/helpers/parseAttributesForView";
 
 interface IProps {
   onChange: (value: string) => void;
@@ -18,7 +19,7 @@ const Select = ({ onChange, options, label }: IProps) => {
         {options?.map((type: string) => {
           return (
             <option value={type} key={type}>
-              {type}
+              {parseAttributesForView(type)}
             </option>
           );
         })}

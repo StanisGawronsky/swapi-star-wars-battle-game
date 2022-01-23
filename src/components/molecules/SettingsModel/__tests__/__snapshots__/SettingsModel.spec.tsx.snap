@@ -1,39 +1,44 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Settings /> renders correctly 1`] = `
+exports[`<SettingsModel /> renders correctly 1`] = `
 <div>
   <div>
     <div>
       <label>
-        123
+        Chose your player type
       </label>
       <select>
         <option
-          value="1"
+          value="champions"
         >
-          1
+          champions
         </option>
         <option
-          value="2"
+          value="starships"
         >
-          2
+          starships
         </option>
       </select>
     </div>
     <div>
       <label>
-        123
+        Chose your attribute
       </label>
       <select>
         <option
-          value="1"
+          value="height"
         >
-          1
+          height
         </option>
         <option
-          value="2"
+          value="mass"
         >
-          2
+          mass
+        </option>
+        <option
+          value="birth_year"
+        >
+          birth year
         </option>
       </select>
     </div>
