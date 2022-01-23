@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Settings /> renders correctly 1`] = `
+<div>
+  <div>
+    <div>
+      <label>
+        123
+      </label>
+      <select>
+        <option
+          value="1"
+        >
+          1
+        </option>
+        <option
+          value="2"
+        >
+          2
+        </option>
+      </select>
+    </div>
+    <div>
+      <label>
+        123
+      </label>
+      <select>
+        <option
+          value="1"
+        >
+          1
+        </option>
+        <option
+          value="2"
+        >
+          2
+        </option>
+      </select>
+    </div>
+  </div>
+</div>
+`;
