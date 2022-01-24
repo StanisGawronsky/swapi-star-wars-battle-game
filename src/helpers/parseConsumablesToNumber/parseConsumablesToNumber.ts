@@ -1,4 +1,4 @@
-export const parseConsumablesToNumber = (consumable: string) => {
+const parseConsumablesToNumber = (consumable: string) => {
   const array = consumable.split(" ");
   const strictValue = parseInt(array[0]) as number;
   const multiplier = array[1];
@@ -15,3 +15,4 @@ export const parseConsumablesToNumber = (consumable: string) => {
   }
   return strictValue * period;
 };
+export default parseConsumablesToNumber;

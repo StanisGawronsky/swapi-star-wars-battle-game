@@ -4,7 +4,7 @@ import { ResponseTypeChampion, ResponseTypeStarships } from "../types";
 
 const url = encodeURI("https://swapi.dev/api/");
 
-export const getStarships = async () => {
+export const getStarships = async (): Promise<ResponseTypeStarships[]> => {
   return axios
     .get(`${url}starships`)
     .then((res) => {
@@ -37,7 +37,7 @@ export const getStarships = async () => {
     });
 };
 
-export const getChampions = async () => {
+export const getChampions = async (): Promise<ResponseTypeChampion[]> => {
   return axios
     .get(`${url}people`)
     .then((res) => {

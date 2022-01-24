@@ -19,13 +19,13 @@ const Settings: React.FC<IProps> = ({
     <div className={styles.settingsWrapper}>
       <Select
         options={playerTypes}
-        label={"Chose your player type"}
+        label={"Choose your player type"}
         onChange={setCurrentPlayerType}
       />
 
       <Select
         options={availableAttributes}
-        label={"Chose your attribute"}
+        label={"Choose your attribute"}
         onChange={setCurrentAttribute}
       />
     </div>

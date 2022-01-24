@@ -1,4 +1,4 @@
-export const parseStringToNumber = (value: string) => {
+const parseStringToNumber = (value: string) => {
   if (value === "unknown" || value === "n/a") return value;
 
   let newstring = value;
@@ -24,3 +24,4 @@ export const parseStringToNumber = (value: string) => {
 
   return parseFloat(newstring);
 };
+export default parseStringToNumber;

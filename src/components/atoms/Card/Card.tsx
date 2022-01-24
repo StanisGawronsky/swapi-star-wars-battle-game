@@ -20,7 +20,9 @@ const Card: React.FC<IProps> = ({ player, currentAttribute }: IProps) => {
           </span>
           <span className={styles.value}>{value}</span>
           <span
-            className={clsx(currentAttribute === key && styles.current)}
+            className={clsx(
+              currentAttribute === key && styles.currentAttribute
+            )}
           ></span>
         </p>
       );

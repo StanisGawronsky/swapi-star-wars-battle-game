@@ -6,7 +6,7 @@ exports[`<Game /> renders correctly 1`] = `
     <div>
       <div>
         <label>
-          Chose your player type
+          Choose your player type
         </label>
         <select>
           <option
@@ -23,7 +23,7 @@ exports[`<Game /> renders correctly 1`] = `
       </div>
       <div>
         <label>
-          Chose your attribute
+          Choose your attribute
         </label>
         <select>
           <option

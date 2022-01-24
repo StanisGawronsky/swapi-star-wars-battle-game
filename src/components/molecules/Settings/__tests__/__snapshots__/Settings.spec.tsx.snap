@@ -5,13 +5,13 @@ exports[`<Settings /> renders correctly 1`] = `
   <div>
     <div>
       <label>
-        Chose your player type
+        Choose your player type
       </label>
       <select />
     </div>
     <div>
       <label>
-        Chose your attribute
+        Choose your attribute
       </label>
       <select />
     </div>
