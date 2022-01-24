@@ -31,7 +31,10 @@ export const getStarships = async () => {
 
       return starships;
     })
-    .catch((err) => new Error(err));
+    .catch((err) => {
+      console.log(err);
+      return [];
+    });
 };
 
 export const getChampions = async () => {
@@ -54,5 +57,8 @@ export const getChampions = async () => {
       );
       return champions;
     })
-    .catch((err) => new Error(err));
+    .catch((err) => {
+      console.log(err);
+      return [];
+    });
 };

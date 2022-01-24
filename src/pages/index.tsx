@@ -9,8 +9,8 @@ interface IProps {
   starships: StarshipType[];
 }
 
-const Home: React.FC<IProps> = (props: IProps) => {
-  return <Game props={props} />;
+const Home: React.FC<IProps> = ({ champions, starships }: IProps) => {
+  return <Game champions={champions} starships={starships} />;
 };
 
 export const getStaticProps: GetStaticProps = async () => {

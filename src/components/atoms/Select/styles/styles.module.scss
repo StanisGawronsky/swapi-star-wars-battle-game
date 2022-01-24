@@ -1,0 +1,29 @@
+.selectWrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 12px;
+
+  & label {
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 8px;
+  }
+
+  & select {
+    padding: 8px 12px;
+    font-size: 22px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background: white;
+    min-width: 286px;
+    transition: 0.5s all;
+    cursor: pointer;
+
+    &:hover {
+      background: black;
+      color: white;
+      transition: 0.5s all;
+    }
+  }
+}

@@ -20,7 +20,8 @@
       "~/components/*": ["components/*"],
       "~/helpers/*": ["helpers/*"],
       "~/types/*": ["types/*"],
-      "~/player/*": ["player/*"]
+      "~/player/*": ["player/*"],
+      "~/__mocks__/*": ["__mocks__/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

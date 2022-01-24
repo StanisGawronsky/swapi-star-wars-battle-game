@@ -1,0 +1,18 @@
+.resultHeading {
+  text-align: center;
+  padding: 12px 0;
+}
+
+.cardContainer {
+  display: flex;
+  width: 100%;
+  margin-top: 64px;
+  justify-content: space-evenly;
+  align-items: center;
+
+  @media screen and (max-width: 900px) {
+    height: auto;
+    flex-direction: column;
+    margin-top: 24px;
+  }
+}

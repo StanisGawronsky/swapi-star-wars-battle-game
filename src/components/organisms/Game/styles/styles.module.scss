@@ -1,0 +1,22 @@
+.gameWrapper {
+  @media screen and (max-width: 900px) {
+    padding-bottom: 48px;
+  }
+}
+.playButton {
+  margin: 24px auto;
+  display: block;
+  padding: 8px 24px;
+  background: rgb(67, 173, 74);
+  border: none;
+  appearance: none;
+  color: white;
+  font-size: 22px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    background: rgb(84, 223, 93);
+  }
+}

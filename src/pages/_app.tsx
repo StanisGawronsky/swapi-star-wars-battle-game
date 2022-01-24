@@ -1,6 +1,5 @@
 import type { AppProps } from "next/app";
 import Head from "next/Head";
-import { RecoilRoot } from "recoil";
 import "../../global.css";
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
   return (
@@ -13,9 +12,8 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
           content="width=device-width, initial-scale=1, maximum-scale=1"
         ></meta>
       </Head>
-      <RecoilRoot>
-        <Component {...pageProps} />
-      </RecoilRoot>
+
+      <Component {...pageProps} />
     </>
   );
 };

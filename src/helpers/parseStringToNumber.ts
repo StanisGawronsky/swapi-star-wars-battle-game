@@ -1,5 +1,5 @@
 export const parseStringToNumber = (value: string) => {
-  if (value === "unknown" || value === "n/a") return null;
+  if (value === "unknown" || value === "n/a") return value;
 
   let newstring = value;
 

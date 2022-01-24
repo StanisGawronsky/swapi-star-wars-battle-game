@@ -2,6 +2,8 @@
 
 exports[`<Scene /> renders correctly 1`] = `
 <div>
-  <div />
+  <div>
+    <div />
+  </div>
 </div>
 `;

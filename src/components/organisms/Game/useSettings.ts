@@ -6,6 +6,10 @@ interface ISettings {
   availableAttributes: string[];
   setCurrentPlayerType: (player: string) => void;
   setCurrentAttribute: (attribute: string) => void;
+  CHAMPIONS: string;
+  STARSHIPS: string;
+  CHAMPION_ATTRIBUTES: string[];
+  STARSHIP_ATTRIBUTES: string[];
 }
 const CHAMPIONS = "champions";
 const STARSHIPS = "starships";
@@ -27,18 +31,18 @@ export const useSettings = (): ISettings => {
   );
   const [availableAttributes, setAvailableAttributes] =
     useState<Array<string>>(CHAMPION_ATTRIBUTES);
-  const [currentPlayerType, setCurrentPlayerType] = useState(CHAMPIONS[0]);
+  const [currentPlayerType, setCurrentPlayerType] = useState(CHAMPIONS);
   const playerTypes = [CHAMPIONS, STARSHIPS];
 
   useEffect(() => {
     if (currentPlayerType === CHAMPIONS) {
       setAvailableAttributes(CHAMPION_ATTRIBUTES);
-      return setCurrentAttribute(CHAMPION_ATTRIBUTES[0]);
+      setCurrentAttribute(CHAMPION_ATTRIBUTES[0]);
     }
 
     if (currentPlayerType === STARSHIPS) {
       setAvailableAttributes(STARSHIP_ATTRIBUTES);
-      return setCurrentAttribute(STARSHIP_ATTRIBUTES[0]);
+      setCurrentAttribute(STARSHIP_ATTRIBUTES[0]);
     }
   }, [currentPlayerType]);
 
@@ -49,5 +53,9 @@ export const useSettings = (): ISettings => {
     setCurrentPlayerType,
     playerTypes,
     availableAttributes,
+    CHAMPIONS,
+    STARSHIPS,
+    CHAMPION_ATTRIBUTES,
+    STARSHIP_ATTRIBUTES,
   };
 };

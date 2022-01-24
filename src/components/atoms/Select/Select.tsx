@@ -1,5 +1,6 @@
 import React from "react";
 import { parseAttributesForView } from "~/helpers/parseAttributesForView";
+import styles from "./styles/styles.module.scss";
 
 interface IProps {
   onChange: (value: string) => void;
@@ -9,7 +10,7 @@ interface IProps {
 
 const Select = ({ onChange, options, label }: IProps) => {
   return (
-    <div>
+    <div className={styles.selectWrapper}>
       <label>{label}</label>
       <select
         onChange={(e) => {

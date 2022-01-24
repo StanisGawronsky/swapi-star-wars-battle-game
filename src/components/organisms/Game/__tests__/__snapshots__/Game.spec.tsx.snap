@@ -44,6 +44,12 @@ exports[`<Game /> renders correctly 1`] = `
         </select>
       </div>
     </div>
+    <div>
+      <div />
+    </div>
+    <button>
+      play
+    </button>
   </div>
 </div>
 `;

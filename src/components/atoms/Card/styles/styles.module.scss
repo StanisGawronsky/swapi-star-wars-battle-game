@@ -1,0 +1,35 @@
+.cardWrapper {
+  margin: 20px 12px;
+  padding: 24px;
+  width: 380px;
+  height: 450px;
+  border: 1px solid rgb(114, 114, 114);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.5s all;
+
+  &:hover {
+    border-color: rgb(83, 201, 99);
+    -webkit-box-shadow: 8px 8px 24px 0px rgba(196, 222, 177, 1);
+    -moz-box-shadow: 8px 8px 24px 0px rgba(196, 222, 177, 1);
+    box-shadow: 8px 8px 24px 0px rgba(196, 222, 177, 1);
+    transition: 0.5s all;
+  }
+}
+
+.attributeRow {
+  position: relative;
+  font-size: 20px;
+  padding: 4px 0;
+}
+
+.current {
+  position: absolute;
+  top: -2px;
+  left: -12px;
+  right: -12px;
+  bottom: -2px;
+  background-color: rgb(106, 193, 106);
+  border-radius: 8px;
+  z-index: -1;
+}
